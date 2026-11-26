@@ -248,7 +248,7 @@ function setLanguage(lang) {
 
   if (tagline) tagline.textContent = t.tagline;
   if (vision) vision.textContent = t.vision;
-setLanguage("nl");
+
  const menuLinks = {
   nl: ["Onze visie", "Onze superheld", "Onze doelen", "Whitepaper", "Roadmap 2026–2027", "SRA Wallet", "Productupdates"],
   en: ["Our Vision", "Our Superhero", "Our Goals", "Whitepaper", "Roadmap 2026–2027", "SRA Wallet", "Product Updates"],
@@ -259,8 +259,11 @@ document.querySelectorAll("nav a").forEach((link, i) => {
   if (menuLinks[lang][i]) {
     link.textContent = menuLinks[lang][i];
   }
-}); 
+});
+  }
+setLanguage("nl");
   setLanguage("nl");
+  
 </script>
 
 
