@@ -249,6 +249,17 @@ function setLanguage(lang) {
   if (tagline) tagline.textContent = t.tagline;
   if (vision) vision.textContent = t.vision;
 }
+ const menuLinks = {
+  nl: ["Onze visie", "Onze superheld", "Onze doelen", "Whitepaper", "Roadmap 2026–2027", "SRA Wallet", "Productupdates"],
+  en: ["Our Vision", "Our Superhero", "Our Goals", "Whitepaper", "Roadmap 2026–2027", "SRA Wallet", "Product Updates"],
+  srn: ["Wi fisi", "Wi superheld", "Wi doel", "Whitepaper", "Roadmap 2026–2027", "SRA Wallet", "Nyun informatie"]
+};
+
+document.querySelectorAll("nav a").forEach((link, i) => {
+  if (menuLinks[lang][i]) {
+    link.textContent = menuLinks[lang][i];
+  }
+}); 
   setLanguage("nl");
 </script>
 
